@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     try:
-        sock.sendto(binascii.unhexlify(message), ("198.97.190.53", 53))
+        sock.sendto(binascii.unhexlify(message), ("185.211.88.6", 53))
         response, _ = sock.recvfrom(4096)
     finally:
         sock.close()
